@@ -19,8 +19,8 @@ const perguntas = [
                 texto: "Isso é maravilhoso!",
                 afirmacao: [
                  "Quis saber como usar IA no seu dia a dia."
-                 "Pensou que IA pode ajudar em tarefas da sua vida."
-                ]
+                 "Foi atrás de vídeos, artigos e mais informaçõe sobre como utilizar essa tecnologia."
+            ]
             }           
             
         ]
@@ -108,7 +108,7 @@ function mostraAlternativas(){
 }
 
 function respostaSelecionada(opcaoSelecionada){
-    const afirmacoes = opcaoSelecionada.afirmacao;
+    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
     historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
@@ -118,6 +118,11 @@ function mostraResultado(){
     caixaPerguntas.textContent = "Em 2049...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
+}
+
+function aleatorio (lista){
+        const posicao = Math.floor(Math.random()* lista.length);
+        return lista[posicao];
 }
 
 mostraPergunta();

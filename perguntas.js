@@ -4,17 +4,17 @@ export const perguntas = [
         alternativas: [
             {
                 texto: "Isso é assustador!",
-                afirmacao: [
-                "No início ficou com medo do que essa tecnologia pode fazer."
-                "Achou assustador pensar na velocidade na qual a tecnologia está avançando."
-            ]
+                afirmacao: ["No início ficou com medo do que essa tecnologia pode fazer."
+                    "Achou assustador pensar na velocidade na qual a tecnologia está avançando."
+                ],
+                proxima: 1,
             },
             {
                 texto: "Isso é maravilhoso!",
-                afirmacao: [
-                 "Quis saber como usar IA no seu dia a dia."
-                 "Foi atrás de vídeos, artigos e mais informaçõe sobre como utilizar essa tecnologia."
-            ]
+                afirmacao: ["Quis saber como usar IA no seu dia a dia.",
+                    "Foi atrás de vídeos, artigos e mais informaçõe sobre como utilizar essa tecnologia."
+                ],
+                proxima: 2,
             }           
             
         ]
